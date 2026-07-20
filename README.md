@@ -1,32 +1,46 @@
-# React + TypeScript + Vite
+# Carlos Mendes | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio website for Carlos Mendes, a backend-focused Software Developer.
 
-Currently, two official plugins are available:
+## Live demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Open the live portfolio](https://portfolio-lovat-three-40.vercel.app/)
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This website presents my backend projects, current technical stack, and contact
+links. It was built to provide a clear overview of the APIs and systems I am
+developing while preparing for my first professional software development role.
 
-## Expanding the Oxlint configuration
+## Featured projects
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- [Inventory API](https://github.com/CarlosGit0519/inventory-api) — inventory
+  management with stock movements and role-based access control.
+- [E-commerce API](https://github.com/CarlosGit0519/ecommerce-api) — catalog,
+  cart, checkout, orders, payments, and stock validation.
+- [Booking System](https://github.com/CarlosGit0519/booking-system) — service
+  bookings, staff schedules, and conflict prevention.
+- [Auth API](https://github.com/CarlosGit0519/auth-api) — JWT authentication,
+  refresh tokens, and secure password handling.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Tech stack
+
+- React
+- TypeScript
+- Vite
+- CSS
+- Vercel
+
+## Run locally
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open `http://localhost:5173` in your browser.
+
+## Deployment
+
+The project is deployed on Vercel. Every push to the `main` branch triggers a
+new production deployment automatically.
